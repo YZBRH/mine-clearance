@@ -26,24 +26,27 @@ int PlayAgain()
 	{
 		return 0;
 	}
-}
+}//再来一次
 
 
 void game()
 {
 	char display[ROWS][COLS];//展示给玩家
 	char reality[ROWS][COLS];//存储雷的相关数据
+	char mark[ROWS][COLS];//用于连锁探雷中已探过位置的标记
 
 	setboard(display, ROWS, COLS, '*' );
 	setboard(reality, ROWS, COLS, '0');//棋盘初始化
+	setboard(mark, ROWS, COLS, '*');
+
 
 	laymines(reality, ROW, COL);//埋雷
 
 
-	displayboard(reality, ROW, COL);//测试使用
+	//displayboard(reality, ROW, COL);//测试使用
 	displayboard(display, ROW, COL);//展示棋盘
 
-	MineClearance(reality, display, MINE_COUNT);//扫雷
+	MineClearance(reality, display,mark, MINE_COUNT);//扫雷
 
 
 
