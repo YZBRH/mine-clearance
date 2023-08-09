@@ -1,0 +1,11 @@
+﻿  game.c
+C:\Users\86156\Desktop\c_test\minesweeping-game\game.h(1,1): warning C4828: 文件包含在偏移 0x1ff 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+C:\Users\86156\Desktop\c_test\minesweeping-game\game.c(129,75): warning C4028: 形参 3 与声明不同
+C:\Users\86156\Desktop\c_test\minesweeping-game\game.c(130,1): warning C4029: 声明的形参表不同于定义
+  test.c
+C:\Users\86156\Desktop\c_test\minesweeping-game\game.h(1,1): warning C4828: 文件包含在偏移 0x1ff 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+C:\Users\86156\Desktop\c_test\minesweeping-game\test.c(49,33): warning C4047: “函数”:“int”与“char [11][11]”的间接级别不同
+C:\Users\86156\Desktop\c_test\minesweeping-game\test.c(49,33): warning C4024: “MineClearance”: 形参和实参 3 的类型不同
+C:\Users\86156\Desktop\c_test\minesweeping-game\test.c(49,39): warning C4020: “MineClearance”: 实参太多
+  正在生成代码...
+  扫雷游戏.vcxproj -> C:\Users\86156\Desktop\c_test\minesweeping-game\x64\Debug\扫雷游戏.exe
